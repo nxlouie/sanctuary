@@ -47,10 +47,6 @@ Required: (1) iPhone 5 or higher
 2. Press the **Play** button. In the **Game** view you should see a rendered demo scene.
 	- **Note:** although the scene here is monoscopic, the rendering on your phone will be stereo.
 3. Interact with the scene using simulation controls
-    |        Simulated action        |        What to do        |
-              Turn your head             Hold Alt + move mouse
-              Tilt your view           Hold Control + move mouse
-               Button press         Click anywhere in the Game view
     
 ### Step 7: Build and run the demo scene on your device
 1. Connect your phoe to your computer using a USB cable
