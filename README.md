@@ -9,14 +9,14 @@ EECS 441 Project Team JEANJA - Unity
 
 
 ## File and Folder Structure
-> Starter App - Contains frontend and Unity Environment Code
-	> Assets
-		> GoogleVR - Google VR SDK
-		> Objects - objects used in VR Environments
-	> ProjectSettings
-> sanctuary_backend - backend Django REST API for data collection
-	> sanctuary - admin, apps, models, tests, and views
-	> sanctuary_backend - settings, urls, wsgi
+* Starter App - Contains frontend and Unity Environment Code
+	* Assets
+		* GoogleVR - Google VR SDK
+		* Objects - objects used in VR Environments
+	* ProjectSettings
+* sanctuary_backend - backend Django REST API for data collection
+	* sanctuary - admin, apps, models, tests, and views
+	* sanctuary_backend - settings, urls, wsgi
 
 
 
