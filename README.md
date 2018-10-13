@@ -8,7 +8,25 @@ EECS 441 Project Team JEANJA - Unity
 
 
 
-## Build instructions
+## File and Folder Structure
+> Starter App - Contains frontend and Unity Environment Code
+	> Assets
+		> GoogleVR - Google VR SDK
+		> Objects - objects used in VR Environments
+	> ProjectSettings
+> sanctuary_backend - backend Django REST API for data collection
+	> sanctuary - admin, apps, models, tests, and views
+	> sanctuary_backend - settings, urls, wsgi
+
+
+
+## Backend Build Instructions
+1. Install Python 3 and Django
+2. Navigate to sanctuary/sanctuary_backend
+3. python manage.py runserver
+
+
+## VR Build Instructions
 ```
 Required: (1) iPhone 5 or higher
           (2) iOS 8.0 or higher
