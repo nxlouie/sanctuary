@@ -13,7 +13,12 @@ EECS 441 Project Team JEANJA - Unity
 	* Assets
 		* GoogleVR - Google VR SDK
 		* Objects - objects used in VR Environments
-	* ProjectSettings
+			* Nature
+			* Nature2
+			* Survival_Objects
+			* Treasurechest
+		* Scenes - main base environment
+	* ProjectSettings - asset files needed for Starter App
 * sanctuary_backend - backend Django REST API for data collection
 	* sanctuary - admin, apps, models, tests, and views
 	* sanctuary_backend - settings, urls, wsgi
