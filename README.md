@@ -22,7 +22,10 @@ EECS 441 Project Team JEANJA - Unity
 * sanctuary_backend - backend Django REST API for data collection
 	* sanctuary - admin, apps, models, tests, and views
 	* sanctuary_backend - settings, urls, wsgi
-
+* sanctuary_android - Android application for sanctuary (instructions for setup coming soon)
+    * app - app activities
+        * build.gradle (app) - dependencies
+    * build.gradle (module) - dependencies
 
 
 ## Backend Build Instructions
@@ -33,8 +36,12 @@ EECS 441 Project Team JEANJA - Unity
 
 ## VR Build Instructions
 ```
-Required: (1) iPhone 5 or higher
-          (2) iOS 8.0 or higher
+Required (iOS):
+    (1) iPhone 5 or higher
+    (2) iOS 8.0 or higher
+Required (Android):
+    (1) Daydream compatible phone
+    (2) Min Android SDK of 19
 ```
               
 ### Step 1: Install Unity 
@@ -42,9 +49,9 @@ Required: (1) iPhone 5 or higher
 2. Minimum version: 5.6
 	- Make sure **iOS Build Support** is selected during installation.
     
-### Step 2: Configure your environment for iOS development
+### Step 2: Configure your environment for iOS/Android development
 1. Refer to Unity's guide for [Getting started with iOS development](https://docs.unity3d.com/Manual/iphone-GettingStarted.html)
-
+2. Refer to Google's guide for [Getting started with Android development](https://developers.google.com/vr/develop/android/get-started)
 ### Step 3: Download the Google VR SDK for Unity
 1. Download the latest [**GoogleVRForUnity_\*.unitypackage**](https://github.com/googlevr/gvr-unity-sdk/releases)
 
