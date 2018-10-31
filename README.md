@@ -17,6 +17,8 @@ EECS 441 Project Team JEANJA - Unity
 			* Nature2
 			* Survival_Objects
 			* Treasurechest
+			* FireplaceTest
+
 		* Scenes - main base environment
 	* ProjectSettings - asset files needed for Starter App
 * sanctuary_backend - backend Django REST API for data collection
