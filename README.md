@@ -20,7 +20,7 @@ EECS 441 Project Team JEANJA - Unity
 		* Scenes - main base environment
 	* ProjectSettings - asset files needed for Starter App
 * sanctuary_backend - backend Django REST API for data collection
-	* sanctuary - admin, apps, models, tests, and views
+	* django_project - admin, apps, models, tests, and views
 	* sanctuary_backend - settings, urls, wsgi
 * sanctuary_android - Android application for sanctuary (instructions for setup coming soon)
     * app - app activities
@@ -29,6 +29,9 @@ EECS 441 Project Team JEANJA - Unity
 
 
 ## Backend Build Instructions
+
+Access the Digital Ocean droplet by ssh root@68.183.103.97. Ask Nathan for the password.
+
 1. Install Python 3 and Django
 2. Navigate to sanctuary/sanctuary_backend
 3. python manage.py runserver
