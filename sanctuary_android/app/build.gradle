@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "poc.cevt.hmi.com.sanctuary"
-        minSdkVersion 17
+        minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -26,4 +26,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+
+    // Adds Google VR spatial audio support
+    implementation 'com.google.vr:sdk-audio:1.160.0'
+
+    // Required for all Google VR apps
+    implementation 'com.google.vr:sdk-base:1.160.0'
 }
