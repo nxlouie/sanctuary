@@ -28,6 +28,10 @@ EECS 441 Project Team JEANJA - Unity
     * app - app activities
         * build.gradle (app) - dependencies
     * build.gradle (module) - dependencies
+* gvr-android-sdk-1.160.0 - GVR Android SDK
+	* assets - some assets for use in app
+	* libraries - SDKs for audio, base, commonwidget, controller, panowidget, videowidget
+
 
 
 ## Backend Build Instructions
