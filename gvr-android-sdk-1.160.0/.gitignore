@@ -1,0 +1,15 @@
+# Android Studio configuration.
+*.iml
+.idea/
+
+# Gradle build.
+.externalNativeBuild/
+.gradle/
+build/
+libraries/jni
+
+# User configuration.
+local.properties
+
+# OS configurations.
+.DS_Store
