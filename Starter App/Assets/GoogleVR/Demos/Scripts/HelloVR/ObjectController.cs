@@ -20,6 +20,8 @@ namespace GoogleVR.HelloVR {
   public class ObjectController : MonoBehaviour {
     private Vector3 startingPosition;
     private Renderer myRenderer;
+	private bool spinning = false;
+	public Vector3 selectedSize = new Vector3(0.01f, 0.01f, 0);
 
     public Material inactiveMaterial;
     public Material gazedAtMaterial;
@@ -29,6 +31,12 @@ namespace GoogleVR.HelloVR {
       myRenderer = GetComponent<Renderer>();
       SetGazedAt(false);
     }
+
+	void Update(){
+		if (spinning) {
+			transform.Rotate (Vector3.up * 90 * Time.deltaTime);
+		}
+	}
 
     public void SetGazedAt(bool gazedAt) {
       if (inactiveMaterial != null && gazedAtMaterial != null) {
@@ -83,7 +91,13 @@ namespace GoogleVR.HelloVR {
     }
 
 	public void Rotate(BaseEventData eventData){
-		transform.Rotate (Vector3.up * 90);	
+		if (spinning) {
+			spinning = false;
+			transform.localScale += selectedSize;
+		} else {
+			spinning = true;
+			transform.localScale -= selectedSize;
+		}
 	}
   }
 }
