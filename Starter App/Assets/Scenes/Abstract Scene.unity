@@ -547,6 +547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spinValue: 90
+  inactiveMaterial: {fileID: 2100000, guid: dd9179d33e97642369968df4bf7fbce7, type: 2}
+  gazedAtMaterial: {fileID: 2100000, guid: b81827539e15b4b6ba65f4f55ddca6f9, type: 2}
 --- !u!1001 &1699674784
 Prefab:
   m_ObjectHideFlags: 0
