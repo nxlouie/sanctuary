@@ -81,5 +81,9 @@ namespace GoogleVR.HelloVR {
       gameObject.SetActive(false);
       SetGazedAt(false);
     }
+
+	public void Rotate(BaseEventData eventData){
+		transform.Rotate (Vector3.up * 90);	
+	}
   }
 }

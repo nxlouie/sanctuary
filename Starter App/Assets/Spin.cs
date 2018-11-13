@@ -34,7 +34,7 @@ public class Spin : MonoBehaviour {
 		}
 	}
 
-	public void StopSpinning(BaseEventData eventData) {
-		spinning = true;
+	public void Move(BaseEventData eventData) {
+		transform.Rotate (Vector3.up * spinValue);
 	}
 }
