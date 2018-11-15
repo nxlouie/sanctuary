@@ -349,6 +349,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d9412aff759420192d8dcf33f969bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedSize: {x: 0.01, y: 0.01, z: 0}
+  maxSize: {x: 1.5, y: 1.5, z: 0}
+  minSize: {x: 0.5, y: 0.5, z: 0}
   inactiveMaterial: {fileID: 2100000, guid: a5801e27da69043b69f7f194b62c2716, type: 2}
   gazedAtMaterial: {fileID: 2100000, guid: c63bdfc3c6f1447c8bcb58360dd31d6a, type: 2}
 --- !u!82 &148680886
@@ -1045,6 +1048,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d9412aff759420192d8dcf33f969bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedSize: {x: 0.01, y: 0.01, z: 0}
+  maxSize: {x: 1.5, y: 1.5, z: 0}
+  minSize: {x: 0.5, y: 0.5, z: 0}
   inactiveMaterial: {fileID: 2100000, guid: daad62324deb0cf448e5c805c8459bff, type: 2}
   gazedAtMaterial: {fileID: 2100000, guid: 0edec395166a3244592f3532c7ce794c, type: 2}
 --- !u!114 &955127923
@@ -1064,7 +1070,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 955127921}
-          m_MethodName: TeleportRandomly
+          m_MethodName: Breathe
           m_Mode: 0
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1615,6 +1621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d9412aff759420192d8dcf33f969bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedSize: {x: 0.01, y: 0.01, z: 0}
+  maxSize: {x: 1.5, y: 1.5, z: 0}
+  minSize: {x: 0.5, y: 0.5, z: 0}
   inactiveMaterial: {fileID: 2100000, guid: 07e4eb2033080474d8aa55e5a35d49ca, type: 2}
   gazedAtMaterial: {fileID: 2100000, guid: c5f8095b20dc2423cad63ce7379784d7, type: 2}
 --- !u!135 &1490385954

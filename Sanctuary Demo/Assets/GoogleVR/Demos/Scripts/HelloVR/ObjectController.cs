@@ -20,6 +20,10 @@ namespace GoogleVR.HelloVR {
   public class ObjectController : MonoBehaviour {
     private Vector3 startingPosition;
     private Renderer myRenderer;
+	public Vector3 selectedSize = new Vector3(0.01f, 0.01f, 0);
+	public Vector3 maxSize = new Vector3 (1f, 1f, 0);
+	public Vector3 minSize = new Vector3 (0.25f, 0.25f, 0);
+	private bool expand = true;
 
     public Material inactiveMaterial;
     public Material gazedAtMaterial;
@@ -29,6 +33,25 @@ namespace GoogleVR.HelloVR {
       myRenderer = GetComponent<Renderer>();
       SetGazedAt(false);
     }
+
+	void Update(){
+			Debug.Log(transform.localScale);
+			Debug.Log(transform.localScale.x);
+			Debug.Log(maxSize.x);
+		
+		if(transform.localScale.x > maxSize.x){
+			expand = false;
+				Debug.Log("here");
+		}
+		else if(transform.localScale.x == minSize.x){
+			expand = true;
+		}
+
+		if(expand){
+			transform.localScale += selectedSize;
+		}
+		if(!expand) transform.localScale -= selectedSize;	
+	}
 
     public void SetGazedAt(bool gazedAt) {
       if (inactiveMaterial != null && gazedAtMaterial != null) {
@@ -81,5 +104,15 @@ namespace GoogleVR.HelloVR {
       gameObject.SetActive(false);
       SetGazedAt(false);
     }
+	public void Breathe(BaseEventData eventData){
+			transform.localScale += selectedSize;
+		if(transform.localScale.x < maxSize.x){
+			transform.localScale += selectedSize;
+		}
+		else if(transform.localScale.x > minSize.x){
+			transform.localScale -= selectedSize;
+		}
+	}
+
   }
 }
