@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sanctuary Demo.unity
     guid: 3ba8dc3c4243943b3bf82f6c826d4501
+  - enabled: 1
+    path: Assets/Scenes/Sanctuary Demo Abstract.unity
+    guid: 59e5715141e35467dbeff975bf364f92
