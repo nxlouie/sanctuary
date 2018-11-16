@@ -9,6 +9,11 @@ public class SceneCtrlJeanja : MonoBehaviour {
 		SceneManager.LoadScene(sceneName);
 	}
 
+	public void ChangeSceneIdx(int sceneID)
+	{
+		SceneManager.LoadScene (sceneID);
+	}
+
 	public void QuitApp()
 	{
 		Application.Quit();

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.80152893, g: 0.70824045, b: 0.6230018, a: 1}
+  m_IndirectSpecularColor: {r: 0.807326, g: 0.70977986, b: 0.6200378, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2329,12 +2329,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2096033277}
-        m_MethodName: ChangeScene
-        m_Mode: 5
+        m_MethodName: ChangeSceneIdx
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: Sanctuary Abstract Demo
           m_BoolArgument: 0
