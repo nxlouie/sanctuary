@@ -20,6 +20,12 @@ namespace GoogleVR.HelloVR {
   public class ObjectController : MonoBehaviour {
     private Vector3 startingPosition;
     private Renderer myRenderer;
+	private Vector3 selectedSize = new Vector3(0.004f, 0.004f, 0);
+	private Vector3 maxSize = new Vector3 (1.1f, 1.1f, 0);
+	private Vector3 minSize = new Vector3 (0.3f, 0.3f, 0);
+	private bool expand = true;
+	private bool hold = false;
+	private int holdCount = 0;
 
     public Material inactiveMaterial;
     public Material gazedAtMaterial;
@@ -29,6 +35,33 @@ namespace GoogleVR.HelloVR {
       myRenderer = GetComponent<Renderer>();
       SetGazedAt(false);
     }
+
+	void Update(){
+		if(!hold){
+			if(transform.localScale.x > maxSize.x){
+				expand = false;
+				hold = true;
+			}
+			else if(transform.localScale.x < minSize.x){
+				expand = true;
+				hold = true;
+			}
+			if(expand) transform.localScale += selectedSize;
+			if(!expand) transform.localScale -= selectedSize;
+		}
+		else{
+			holdCount += 1;
+				Debug.Log(holdCount);
+			if(!expand && holdCount == 60){
+				hold = false;
+				holdCount = 0;
+			}
+			if(expand && holdCount == 15){
+				hold = false;
+				holdCount = 0;
+			}
+		}
+	}
 
     public void SetGazedAt(bool gazedAt) {
       if (inactiveMaterial != null && gazedAtMaterial != null) {
@@ -81,5 +114,14 @@ namespace GoogleVR.HelloVR {
       gameObject.SetActive(false);
       SetGazedAt(false);
     }
+	public void ChangeShape(BaseEventData eventData){
+		int sibIdx = transform.GetSiblingIndex();
+		int numSibs = transform.parent.childCount;
+		sibIdx = (sibIdx + Random.Range(1, numSibs)) % numSibs;
+		GameObject randomSib = transform.parent.GetChild(sibIdx).gameObject;
+		randomSib.SetActive(true);
+		gameObject.SetActive(false);
+	}
+
   }
 }
