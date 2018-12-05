@@ -53,12 +53,12 @@ namespace GoogleVR.HelloVR {
 		}
 		else{
 			holdCount += 1;
-			if(!expand && holdCount == 65){
+			if(!expand && holdCount == 85){
 				breatheText.text = "Breathe Out";
 				hold = false;
 				holdCount = 0;
 			}
-			if(expand && holdCount == 15){
+			if(expand && holdCount == 25){
 				breatheText.text = "Breathe In";
 				hold = false;
 				holdCount = 0;
