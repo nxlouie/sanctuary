@@ -51,7 +51,6 @@ namespace GoogleVR.HelloVR {
 		}
 		else{
 			holdCount += 1;
-				Debug.Log(holdCount);
 			if(!expand && holdCount == 60){
 				hold = false;
 				holdCount = 0;
