@@ -14,24 +14,34 @@ public class WeatherController : MonoBehaviour {
 
 	void Start()
 	{
-		CheckSnowStatus();
+		UpdateWeatherStatus();
 	}
 	void Update()
 	{
 		apiCheckCountdown -= Time.deltaTime;
 		if (apiCheckCountdown <= 0)
 		{
-			CheckSnowStatus();
+			UpdateWeatherStatus();
 			apiCheckCountdown = API_CHECK_MAXTIME;
 		}
 	}
-	public void CheckSnowStatus()
-	{
-		bool snowing = GetWeather().weather[0].main.Equals("Clouds");
-		if (snowing)
-			SnowSystem.SetActive(true);
-		else
-			SnowSystem.SetActive(false);
+	public void UpdateWeatherStatus()
+	{	
+		/* SNOW EXAMPLE */
+		WeatherInfo weatherInfo = GetWeather();
+		weatherInfo.weather[0].main = "Snow";
+		bool snowing = weatherInfo.weather[0].main.Equals("Snow");
+		if (snowing) {
+			SnowSystem.SetActive (true);
+			// code to change skybox and terrain
+		} else {
+			SnowSystem.SetActive (false);
+		}
+
+		// TO GENERALIZE:
+		// loop over active conditions in weatherInfo.weather
+
+
 	}
 	private WeatherInfo GetWeather()
 	{
