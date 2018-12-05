@@ -450,6 +450,7 @@ GameObject:
   - component: {fileID: 148680885}
   - component: {fileID: 148680884}
   - component: {fileID: 148680886}
+  - component: {fileID: 148680887}
   m_Layer: 0
   m_Name: TriSphere
   m_TagString: Untagged
@@ -649,6 +650,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &148680887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148680882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b682814b7576e4774aef129376d1982d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shape: {fileID: 148680882}
+  mats:
+  - {fileID: 2100000, guid: 393db18d8fd0f4bd6b1bd6c7a6f9ec55, type: 2}
+  - {fileID: 2100000, guid: b17ddfb8c586d4ab4a8e4e04a90fae83, type: 2}
+  - {fileID: 2100000, guid: 758c42e2285fd48208988f0bed3401ec, type: 2}
 --- !u!135 &148680889
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1853,6 +1870,7 @@ GameObject:
   - component: {fileID: 955127921}
   - component: {fileID: 955127923}
   - component: {fileID: 955127919}
+  - component: {fileID: 955127920}
   m_Layer: 0
   m_Name: Icosahedron
   m_TagString: Untagged
@@ -1995,6 +2013,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &955127920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955127915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b682814b7576e4774aef129376d1982d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shape: {fileID: 955127915}
+  mats:
+  - {fileID: 2100000, guid: 393db18d8fd0f4bd6b1bd6c7a6f9ec55, type: 2}
+  - {fileID: 2100000, guid: b17ddfb8c586d4ab4a8e4e04a90fae83, type: 2}
+  - {fileID: 2100000, guid: 758c42e2285fd48208988f0bed3401ec, type: 2}
 --- !u!114 &955127921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2599,6 +2633,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1199920617}
+  - component: {fileID: 1199920618}
   m_Layer: 0
   m_Name: Shapes
   m_TagString: Untagged
@@ -2627,6 +2662,86 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 1.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &1199920618
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199920616}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: aca1638b671ce46aaad3d450422ff9e6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1225905333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3038,6 +3153,7 @@ GameObject:
   - component: {fileID: 1490385950}
   - component: {fileID: 1490385949}
   - component: {fileID: 1490385957}
+  - component: {fileID: 1490385951}
   m_Layer: 0
   m_Name: QuadSphere
   m_TagString: Untagged
@@ -3157,6 +3273,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inactiveMaterial: {fileID: 2100000, guid: 393db18d8fd0f4bd6b1bd6c7a6f9ec55, type: 2}
   gazedAtMaterial: {fileID: 2100000, guid: c5f8095b20dc2423cad63ce7379784d7, type: 2}
+--- !u!114 &1490385951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1490385947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b682814b7576e4774aef129376d1982d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shape: {fileID: 1490385947}
+  mats:
+  - {fileID: 2100000, guid: 393db18d8fd0f4bd6b1bd6c7a6f9ec55, type: 2}
+  - {fileID: 2100000, guid: b17ddfb8c586d4ab4a8e4e04a90fae83, type: 2}
+  - {fileID: 2100000, guid: 758c42e2285fd48208988f0bed3401ec, type: 2}
 --- !u!135 &1490385954
 SphereCollider:
   m_ObjectHideFlags: 0
