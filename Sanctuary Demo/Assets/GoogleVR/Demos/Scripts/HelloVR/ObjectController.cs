@@ -29,6 +29,7 @@ namespace GoogleVR.HelloVR {
 
     public Material inactiveMaterial;
     public Material gazedAtMaterial;
+	public UnityEngine.UI.Text breatheText;
 
     void Start() {
       startingPosition = transform.localPosition;
@@ -39,6 +40,7 @@ namespace GoogleVR.HelloVR {
 	void Update(){
 		if(!hold){
 			if(transform.localScale.x > maxSize.x){
+				breatheText.text = "Hold";
 				expand = false;
 				hold = true;
 			}
@@ -51,11 +53,13 @@ namespace GoogleVR.HelloVR {
 		}
 		else{
 			holdCount += 1;
-			if(!expand && holdCount == 60){
+			if(!expand && holdCount == 65){
+				breatheText.text = "Breathe Out";
 				hold = false;
 				holdCount = 0;
 			}
 			if(expand && holdCount == 15){
+				breatheText.text = "Breathe In";
 				hold = false;
 				holdCount = 0;
 			}
