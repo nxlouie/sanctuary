@@ -19,22 +19,9 @@ namespace GoogleVR.Demos {
 
   // Ensures correct app and scene setup.
   public class DemoSceneManager : MonoBehaviour {
-	public List<GameObject> shapes;
-	public List<Material> mats;
-	private Material selectedMat;
 	
     void Start() {
       Input.backButtonLeavesApp = true;
-	  string materialName = PlayerPrefs.GetString("Color", "BlueMat");
-	  foreach(Material mat in mats){
-	  	if(mat.name == materialName){
-			selectedMat = mat;
-		}
-	  }
-	  foreach(GameObject shape in shapes){
-	  	Renderer shapeRenderer = shape.GetComponent<Renderer>();
-		shapeRenderer.material = selectedMat;
-	  }
     }
 
     void Update() {
