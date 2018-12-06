@@ -14,3 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sanctuary Demo Abstract.unity
     guid: 59e5715141e35467dbeff975bf364f92
+  - enabled: 1
+    path: Assets/Scenes/Sanctuary Demo Space.unity
+    guid: 2753a1b14eb7d446fb663ee7be003fba
+  - enabled: 0
+    path: Assets/Vast Outer Space/EXAMPLE/Demo_Scene_A.unity
+    guid: 6c9e50774c896fd43a6fef673b9fd9df
+  - enabled: 0
+    path: Assets/Vast Outer Space/EXAMPLE/Demo_Scene_D.unity
+    guid: bf4062ff488c37f4781e88f218b8039e
