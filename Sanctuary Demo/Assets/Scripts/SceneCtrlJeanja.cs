@@ -44,4 +44,16 @@ public class SceneCtrlJeanja : MonoBehaviour {
 			shapeRenderer.material = selectedMat;
 		}
 	}
+
+	public void ToggleTutorial(){
+		if (PlayerPrefs.GetString ("Tutorial") == "on") {
+			PlayerPrefs.SetString ("Tutorial", "off");
+			print ("on to off");
+			print (PlayerPrefs.GetString ("Tutorial"));
+		} else {
+			PlayerPrefs.SetString ("Tutorial", "on");
+			print ("off to on");
+			print (PlayerPrefs.GetString ("Tutorial"));
+		}
+	}
 }
