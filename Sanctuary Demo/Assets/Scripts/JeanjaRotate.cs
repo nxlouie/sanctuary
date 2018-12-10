@@ -6,7 +6,7 @@ using UnityEngine;
 public class JeanjaRotate : MonoBehaviour {
     Stopwatch sw = Stopwatch.StartNew();
 
-	float rate = 18f;
+	float rate = 0.2f;
 
 	// Use this for initialization
 	void Start () {
@@ -15,22 +15,25 @@ public class JeanjaRotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (sw.Elapsed.TotalMilliseconds < 7600) {
+		if (sw.Elapsed.TotalMilliseconds < 5700) {
+			if (rate < 0.5f) {
+				rate = rate + 0.05f;
+			}
 			transform.Rotate(0, rate, 0); // (x, y, z)
 		}
-		else if (sw.Elapsed.TotalMilliseconds > 7600 && sw.Elapsed.TotalMilliseconds < 50000) {
+		else if (sw.Elapsed.TotalMilliseconds > 5700 && sw.Elapsed.TotalMilliseconds < 48100) {
 			transform.Rotate(0, 0.05f, 0); // (x, y, z)
 		}
-		else if (sw.Elapsed.TotalMilliseconds > 50000 && sw.Elapsed.TotalMilliseconds < 71600) {
+		else if (sw.Elapsed.TotalMilliseconds > 48100 && sw.Elapsed.TotalMilliseconds < 69700) {
 			transform.Rotate(0, 0.075f, 0); // (x, y, z)
 		}
-		else if (sw.Elapsed.TotalMilliseconds > 71600 && sw.Elapsed.TotalMilliseconds < 90600) {
+		else if (sw.Elapsed.TotalMilliseconds > 69700 && sw.Elapsed.TotalMilliseconds < 88700) {
 			transform.Rotate(0, 0.2f, 0); // (x, y, z)
 		}
-		else if (sw.Elapsed.TotalMilliseconds > 90600 && sw.Elapsed.TotalMilliseconds < 124000) {
+		else if (sw.Elapsed.TotalMilliseconds > 88700 && sw.Elapsed.TotalMilliseconds < 122100) {
 			transform.Rotate(0, rate, 0); // (x, y, z)
 		}
-		else if (sw.Elapsed.TotalMilliseconds > 124000) {
+		else if (sw.Elapsed.TotalMilliseconds > 122100) {
 			if (rate > 0.075f) {
 				rate = rate - 0.1f;
 			}
