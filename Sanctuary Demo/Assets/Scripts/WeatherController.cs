@@ -29,7 +29,9 @@ public class WeatherController : MonoBehaviour {
 	{	
 		/* SNOW EXAMPLE */
 		WeatherInfo weatherInfo = GetWeather();
-		weatherInfo.weather[0].main = "Snow";
+
+		// UNCOMMENT NEXT LINE IF YOU WANT TO SEE SNOW FOR SURE
+		// weatherInfo.weather[0].main = "Snow";
 		bool snowing = weatherInfo.weather[0].main.Equals("Snow");
 		if (snowing) {
 			SnowSystem.SetActive (true);

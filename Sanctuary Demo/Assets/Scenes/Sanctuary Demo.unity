@@ -12947,6 +12947,49 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7ebb2b5789a2be45b7bd26b3b9d50aa, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &625110442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 625110444}
+  - component: {fileID: 625110443}
+  m_Layer: 0
+  m_Name: DayNight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &625110443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625110442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a5a9541c4c34b1a8ba5d84cd6bc8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dawnDuskSkybox: {fileID: 2100000, guid: e222162ddb8d34547a133b673221b195, type: 2}
+  daySkybox: {fileID: 2100000, guid: eca3c00ef1cc6ce45bfade23ebc4ab1e, type: 2}
+  nightSkybox: {fileID: 2100000, guid: 8185c62f5ccafe247bd3d1a04315857d, type: 2}
+--- !u!4 &625110444
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625110442}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23, y: 162.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &625241400 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 78fdf95c4c2d7384a8957ee310d2b067, type: 2}
@@ -46550,7 +46593,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1669391736
+  randomSeed: 1776069570
   InitialModule:
     serializedVersion: 3
     enabled: 1
